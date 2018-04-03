@@ -1,5 +1,5 @@
 # Site settings
-/*
+
 title: RESTHeart
 email: info@softinstigate.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -36,4 +36,3 @@ blog:
         url: /blog/categories/
         title_prefix: "blog - category: "
         layout: category.html
-*/
