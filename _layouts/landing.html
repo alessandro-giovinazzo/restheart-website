@@ -6,64 +6,116 @@
 
 <html lang="en">
     <!--<![endif]-->
-    {% include head_landing.html %}
+    {% include landing_head.html %}
+    <body class="stretched">
+        <!-- Document Wrapper
+        ============================================= -->
+        <div id="wrapper" class="clearfix">
+            {% include landing_header.html %}
+            
+            {{ content }}
 
-    <body>
-        {% include header_landing.html %}
-
-        <div class="page-content">
-            <div class="wrapper">
-                {{ content }}
-            </div>
+            {% include footer.html %}
         </div>
-
-        {% include footer.html %}
-
         <!-- End Document 
         ================================================== -->
-        <script type="text/javascript" src="{{ "/js/jquery/1.8.3/jquery.min.js" | prepend: site.baseurl }}"></script>
-        <script type="text/javascript" src="{{ "/js/jquery-ui/jquery-ui-1.8.23.custom.min.js" | prepend: site.baseurl }}"></script>
-        <!-- third party plugins  -->
-        <script type="text/javascript" src="{{ "/bootstrap/js/bootstrap.js" | prepend: site.baseurl }}"></script>
-        <script type="text/javascript" src="{{ "/js/docs.min.js" | prepend: site.baseurl }}"></script>
-        <script type="text/javascript">
-    $("li.scroll-anchor > ul.nav > li > a").on('click', function (e) {
-        // prevent default anchor click behavior
-        e.preventDefault();
-        // animate
-        $('html, body').animate({scrollTop: $(this.hash).offset().top - 100}, 300, function () {
-        });
-    });
-        </script>
-        <script type="text/javascript">
-            /*
-             |--------------------------------------------------------------------------
-             | SHARRRE
-             |--------------------------------------------------------------------------
-             */
-            if ($('#shareme').length) {
 
-                $('#shareme').sharrre({
-                    share: {
-                        googlePlus: true,
-                        facebook: true,
-                        twitter: true,
-                        linkedin: true
+        
+        <!-- Go To Top
+        ============================================= -->
+        <div id="gotoTop" class="icon-angle-up"></div>
+
+        <!-- External JavaScripts
+        ============================================= -->
+        <script src="{{ "/js/jquery.js" }}"></script>
+        <script src="{{ "/js/plugins.js" }}"></script>
+
+        <!-- Footer Scripts
+        ============================================= -->
+        <script src="{{ "/js/functions.js" }}"></script>
+
+        <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+        <script src="{{ "/include/rs-plugin/js/jquery.themepunch.tools.min.js" }}"></script>
+        <script src="{{ "/include/rs-plugin/js/jquery.themepunch.revolution.min.js" }}"></script>
+        <script src="{{ "/include/rs-plugin/js/extensions/revolution.extension.video.min.js" }}"></script>
+        <script src="{{ "/include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js" }}"></script>
+        <script src="{{ "/include/rs-plugin/js/extensions/revolution.extension.actions.min.js" }}"></script>
+        <script src="{{ "/include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js" }}"></script>
+        <script src="{{ "/include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js" }}"></script>
+        <script src="{{ "/include/rs-plugin/js/extensions/revolution.extension.navigation.min.js" }}"></script>
+        <script src="{{ "/include/rs-plugin/js/extensions/revolution.extension.migration.min.js" }}"></script>
+        <script src="{{ "/include/rs-plugin/js/extensions/revolution.extension.parallax.min.js" }}"></script>
+
+        <script>
+        var tpj=jQuery;
+        tpj.noConflict();
+        tpj(document).ready(function() {
+            var apiRevoSlider = tpj('#rev_slider_ishop').show().revolution(
+            {
+                sliderType:"standard",
+                jsFileLocation:"include/rs-plugin/js/",
+                sliderLayout:"fullwidth",
+                dottedOverlay:"none",
+                delay:9000,
+                navigation: {},
+                responsiveLevels:[1200,992,768,480,320],
+                gridwidth:1140,
+                gridheight:500,
+                lazyType:"none",
+                shadow:0,
+                spinner:"off",
+                autoHeight:"off",
+                disableProgressBar:"on",
+                hideThumbsOnMobile:"off",
+                hideSliderAtLimit:0,
+                hideCaptionAtLimit:0,
+                hideAllCaptionAtLilmit:0,
+                debugMode:false,
+                fallbacks: {
+                    simplifyAll:"off",
+                    disableFocusListener:false,
+                },
+                navigation: {
+                    keyboardNavigation:"off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation:"off",
+                    onHoverStop:"off",
+                    touch:{
+                        touchenabled:"on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
                     },
-                    buttons: {
-                        googlePlus: {size: 'tall', annotation: 'bubble'},
-                        facebook: {layout: 'box_count'},
-                        twitter: {count: 'vertical'},
-                        linkedin: {counter: 'top'}
-                    },
-                    enableHover: false,
-                    enableCounter: false,
-                    enableTracking: true,
-                    //url:'document.location.href'
-                });
-            }
+                    arrows: {
+                        style: "ares",
+                        enable: true,
+                        hide_onmobile: false,
+                        hide_onleave: false,
+                        tmp: '<div class="tp-title-wrap">	<span class="tp-arr-titleholder">{{title}}</span> </div>',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 10,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 10,
+                            v_offset: 0
+                        }
+                    }
+                }
+            });
+            apiRevoSlider.bind("revolution.slide.onloaded",function (e) {
+                SEMICOLON.slider.sliderParallaxDimensions();
+            });
+
+        }); //ready
 
         </script>
+
     </body>
 
 </html>
