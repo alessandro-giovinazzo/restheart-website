@@ -1,194 +1,84 @@
 <head>
-    <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="author" content="RESTHeart.org">
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- CSS
-    ================================================== -->
-    <!-- Bootstrap  -->
-    <!-- <link type="text/css" rel="stylesheet" href="{{ "/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}"> -->
-    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
-    <!-- icon fonts -->
-    <!-- <link type="text/css" rel="stylesheet" href="{{ "/font-icons/custom-icons/css/custom-icons.css" | prepend: site.baseurl }}">
-    <link type="text/css" rel="stylesheet" href="{{ "/font-icons/custom-icons/css/custom-icons-ie7.css" | prepend: site.baseurl }}"> -->
-    <!-- Custom css -->
-    <!-- <link type="text/css" rel="stylesheet" href="{{ "/css/docs.min.css" | prepend: site.baseurl }}"> -->
-    <!-- prettify -->
-    <!-- <link rel="stylesheet" type="text/css" href="{{ "/css/prettify.css" | prepend: site.baseurl }}"> -->
-    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-    <!-- <link rel="stylesheet" type="text/css" href="{{ "/css/layout.css" | prepend: site.baseurl}}">
-    <link rel="stylesheet" type="text/css" href="{{ "/css/red.css" | prepend: site.baseurl}}">
-    <link rel="stylesheet" type="text/css" href="{{ "/css/blog.css" | prepend: site.baseurl}}"> -->
-   
-   
-    <!-- Stylesheets
-	============================================= -->
-	<link rel="stylesheet" href="{{ "/css/bootstrap.css " }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/style.css " }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/dark.css " }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/font-icons.css "}}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/animate.css " }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/magnific-popup.css " }}" type="text/css" />
-    <link rel="stylesheet" href="{{ "/css/responsive.css " }}" type="text/css" />
-    <!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
-	<link rel="stylesheet" type="text/css" href="{{ "/include/rs-plugin/css/settings.css " }}" media="screen" />
-	<link rel="stylesheet" type="text/css" href="{{ "/include/rs-plugin/css/layers.css " }}">
-	<link rel="stylesheet" type="text/css" href="{{ "/include/rs-plugin/css/navigation.css " }}">
+        <meta charset="utf-8">
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <meta name="author" content="RESTHeart.org">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-    <!-- One Page Module Specific Stylesheet -->
-    <link rel="stylesheet" href="{{ "onepage.css" }}" type="text/css" />
-    <!-- Documentation Module Specific Stylesheet -->
-    <link rel="stylesheet" href="{{ "docs.css" }}" type="text/css" />
-    <link rel="stylesheet" href="{{ "css/font-icons/et/et-line.css" }}" type="text/css" />
-    <link rel="stylesheet" href="{{ "css/font-icons/medical/medical-icons.css" }}" type="text/css" />
-    <link rel="stylesheet" href="{{ "css/font-icons/real-estate/real-estate-icons.css" }}" type="text/css" />
-    <link rel="stylesheet" href="{{ "one-page/css/fonts.css" }}" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lt IE 9]>
-        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <![endif]-->
+        <!-- Stylesheets
+        ============================================= -->
+        <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+        <!-- <link rel="stylesheet" href="style.css" type="text/css" /> -->
+    
+        <!-- One Page Module Specific Stylesheet -->
+        <link rel="stylesheet" href="onepage.css" type="text/css" />
+        <!-- / -->
+    
+        <!-- Documentation Module Specific Stylesheet -->
+        <link rel="stylesheet" href="docs.css" type="text/css" />
+        <!-- / -->
+    
+        <link rel="stylesheet" href="one-page/css/fonts.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- External JavaScripts
-    ============================================= -->
-    <script type="text/javascript" src="{{ "js/jquery.js" }}"></script>
-    <script type="text/javascript" src="{{ "js/plugins.js" }}"></script>
 
-    <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="{{ "/images/favicon.ico" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" href="{{ "/images/apple-touch-icon.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ "/images/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ "/images/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ "/images/apple-touch-icon-144x144.png" | prepend: site.baseurl }}">
+       <!-- CSS
+        ================================================== -->
+        <!-- Bootstrap  -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+       
+        <!-- Stylesheets
+        ============================================= -->
+        <link rel="stylesheet" href="{{ "/css/bootstrap.css " }}" type="text/css" />
+        <link rel="stylesheet" href="{{ "/css/style.css " }}" type="text/css" />
+        <link rel="stylesheet" href="{{ "/css/dark.css " }}" type="text/css" />
+        <link rel="stylesheet" href="{{ "/css/font-icons.css "}}" type="text/css" />
+        <link rel="stylesheet" href="{{ "/css/animate.css " }}" type="text/css" />
+        <link rel="stylesheet" href="{{ "/css/magnific-popup.css " }}" type="text/css" />
+        <link rel="stylesheet" href="{{ "/css/responsive.css " }}" type="text/css" />
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-    {% include google_analytics.html %}
+        <!-- <link rel="stylesheet" href="{{ "/css/font-icons/et/et-line.css" }}" type="text/css" />
+        <link rel="stylesheet" href="{{ "/css/font-icons/medical/medical-icons.css" }}" type="text/css" />
+        <link rel="stylesheet" href="{{ "/css/font-icons/real-estate/real-estate-icons.css" }}" type="text/css" /> -->
 
-    <style>
-
-        ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a{
-            color:#E9E8E3;
-            background-color: #333333;
-        }
-
-        .revo-slider-emphasis-text {
-            font-size: 58px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            font-family: 'Raleway', sans-serif;
-            padding: 15px 20px;
-            border-top: 2px solid #FFF;
-            border-bottom: 2px solid #FFF;
-        }
-
-        .revo-slider-desc-text {
-            font-size: 20px;
-            font-family: 'Lato', sans-serif;
-            width: 650px;
-            text-align: center;
-            line-height: 1.5;
-        }
-
-        .revo-slider-caps-text {
-            font-size: 16px;
-            font-weight: 400;
-            letter-spacing: 3px;
-            font-family: 'Raleway', sans-serif;
-        }
-
-        .tp-video-play-button { display: none !important; }
-
-        .tp-caption { white-space: nowrap; }
+        <!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+        <!-- <link rel="stylesheet" type="text/css" href="{{ "include/rs-plugin/css/settings.css " }}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{{ "include/rs-plugin/css/layers.css " }}">
+        <link rel="stylesheet" type="text/css" href="{{ "include/rs-plugin/css/navigation.css " }}"> -->
     
     
-        .kotlin-overview-section._code-examples {
-            position: relative;
-            padding-top: 0;
-            padding-bottom: 40px;
-            color: #fff;
-            background-color: #393939;
-            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAGXRFW…WHUPJb88nGefLE5Zts/snJFeUJ+EzjvNwVR4oY8f0JMADafXyiN4WApQAAAABJRU5ErkJggg==);
-            background-repeat: repeat;
-        }
+        <!-- Favicons
+        ================================================== -->
+        <!-- <link rel="shortcut icon" href="{{ "images/favicon.ico" | prepend: site.baseurl }}">
+        <link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | prepend: site.baseurl }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ "/images/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ "/images/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ "/images/apple-touch-icon-144x144.png" | prepend: site.baseurl }}">
+    
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+        {% include google_analytics.html %} -->
+      
+    
+               
         
-        .section-header {
-            margin-bottom: 5px;
-            font-family: GraublauSlab Regular,Georgia,serif;
-            font-size: 48px;
-            line-height: 54px;
-            text-align: center;
-            font-weight: 400;
-            margin: 0;
-            color:#FFF;
-        }
+        <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    
+        <!-- External JavaScripts
+        ============================================= -->
+        <script type="text/javascript" src="{{ "/js/jquery.js" }}"></script>
+        <script type="text/javascript" src="{{ "/js/plugins.js" }}"></script>
+
+        <!-- Document Title
+        ============================================= -->
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+       
         
-        .section-header {
-            display:block;
-            text-align:center;
-            text-rendering:optimizeLegibility;
-            width:100%;
-        }
+    </head>
         
-        .section-header>h2 {
-            color:rgb(255, 255, 255);
-            font-family:"GraublauSlab Regular", Georgia, serif;
-            font-size:48px;
-            font-weight:400;
-            height:54px;
-            line-height:54px;
-            margin-bottom:5px;
-            margin-left:0px;
-            margin-right:0px;
-            margin-top:0px;
-            text-align:center;
-            text-rendering:optimizeLegibility;
-            -webkit-margin-after:5px;
-            -webkit-margin-before:0px;
-            -webkit-margin-end:0px;
-            -webkit-margin-start:0px;
-        }
         
-        .section-header>p { 
-            color:rgb(255, 255, 255);
-            font-family:"Open Sans", Helvetica, Arial, sans-serif;
-            font-size:18px;
-            height:21px;
-            line-height:21px;
-            margin-bottom:16px;
-            margin-left:0px;
-            margin-right:0px;
-            margin-top:0px;
-            text-rendering:optimizeLegibility;
-            -webkit-margin-after:16px;
-            -webkit-margin-before:0px;
-            -webkit-margin-end:0px;
-            -webkit-margin-start:0px;
-        }
-        
-        .keyword{
-            color:rgb(255, 139, 23);
-            display:inline;
-            font-family:"Droid Sans Mono", "Liberation Mono", Consolas, Menlo, Courier, monospace;
-            font-size:30px;
-            height:auto;
-            line-height:37px;
-            text-align:left;
-            text-rendering:optimizeLegibility;
-            white-space:pre;
-            width:auto;
-        }
-
-        </style>
-</head>
-
-
-
-
-	
-	
