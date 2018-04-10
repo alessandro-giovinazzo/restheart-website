@@ -1,0 +1,33 @@
+<!-- <div id="docs" class="container-fullwidth clearfix"> -->
+<div id="docs2" class="docs-navigation">
+        <ul>						
+    {% for item in site.data.navigation.toc %}
+        <li class="ui-tabs-active"><a href="{{ item.url }}" >{{item.title}}</a>
+        <ul class="one-page-menu" data-offset="110" data-easing="easeInOutExpo" data-speed="1250">
+            {% for entry in item.subfolderitems %}
+            <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+            {% endfor %}
+        </ul>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+<!-- </div> -->
+
+<!-- <div id="docs" class="container-fullwidth clearfix">
+
+        <div class="docs-navigation">
+
+            <ul>
+                <li><a href="#docs-start">Start</a>
+                    <ul class="one-page-menu" data-offset="110" data-easing="easeInOutExpo" data-speed="1250">
+                        <li><a href="#" data-href="#docs-start-installation">Installation
+                  
+                            </a></li>
+                        <li><a href="#" data-href="#docs-start-html">HTML Structure</a></li>
+                        <li><a href="#" data-href="#docs-start-pagetransition">Page Transition</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+</div> -->

@@ -1,37 +1,72 @@
 <head>
-    <meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    
+    <!-- Style DOCUMENTATION
+	============================================= -->
+    <!-- One Page Module Specific Stylesheet -->
+	<link rel="stylesheet" href="{{ "/include/onepage.css" | prepend: site.baseurl }}" type="text/css" />
+	<!-- Documentation Module Specific Stylesheet -->
+	<link rel="stylesheet" href="{{ "/include/docs.css" | prepend: site.baseurl }}" type="text/css" />
+    
+
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="{{ "/include/css/bootstrap.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/include/style.css" | prepend: site.baseurl }}" type="text/css" />
+	
+	<link rel="stylesheet" href="{{ "/include/css/dark.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/include/css/font-icons.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/include/css/font-icons/et/et-line.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/include/css/font-icons/medical/medical-icons.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/include/css/font-icons/real-estate/real-estate-icons.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/include/css/animate.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/include/css/magnific-popup.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/include/one-page/css/fonts.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/include/css/responsive.css" | prepend: site.baseurl }}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="{{ "/include/js/jquery.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/include/js/plugins.js" | prepend: site.baseurl }}"></script>
+	<!-- Document Title
+	============================================= -->
+
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="RESTHeart.org">
     <!-- Mobile Specific Metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- CSS
-    ================================================== -->
-    <!-- Bootstrap  -->
-    <link type="text/css" rel="stylesheet" href="{{ "/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
-    <!-- icon fonts -->
-    <link type="text/css" rel="stylesheet" href="{{ "/font-icons/custom-icons/css/custom-icons.css" | prepend: site.baseurl }}">
-    <link type="text/css" rel="stylesheet" href="{{ "/font-icons/custom-icons/css/custom-icons-ie7.css" | prepend: site.baseurl }}">
-    <!-- Custom css -->
-    <link type="text/css" rel="stylesheet" href="{{ "/css/docs.min.css" | prepend: site.baseurl }}">
-    <!-- prettify -->
-    <link rel="stylesheet" type="text/css" href="{{ "/css/prettify.css" | prepend: site.baseurl }}">
-    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ "/css/layout.css" | prepend: site.baseurl}}">
-    <link rel="stylesheet" type="text/css" href="{{ "/css/red.css" | prepend: site.baseurl}}">
-    <link rel="stylesheet" type="text/css" href="{{ "/css/blog.css" | prepend: site.baseurl}}">
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="{{ "include/rs-plugin/css/settings.css " }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ "include/rs-plugin/css/layers.css " }}">
+    <link rel="stylesheet" type="text/css" href="{{ "include/rs-plugin/css/navigation.css " }}"> -->
+    
+    
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="{{ "images/favicon.ico" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | prepend: site.baseurl }}">
+    <link rel="shortcut icon" href="{{ "/images/favicon.ico" | prepend: site.baseurl }}">
+    <link rel="apple-touch-icon" href="{{ "/images/apple-touch-icon.png" | prepend: site.baseurl }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ "/images/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ "/images/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
     <link rel="apple-touch-icon" sizes="144x144" href="{{ "/images/apple-touch-icon-144x144.png" | prepend: site.baseurl }}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-    {% include google_analytics.html %}
-</head>
+
+
+    </head>
+    
+    
+    
+    
+        
+        

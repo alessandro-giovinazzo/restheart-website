@@ -1,0 +1,93 @@
+toc:
+  - title: Quick-start
+    url: '#quick-start'
+    subfolderitems:
+      - title: Docker
+        url: '#docker'
+      - title: Vagrant 
+        url: '#vagrant'
+      - title: Bare metal
+        url: '#bare-metal'
+  - title: Run it on your host
+    url: '#run-it-on-your-host'
+    subfolderitems:
+      - title: 1. Install Java and MongoDB
+        url: '#1-install-java-and-mongodb'
+      - title: 2. Install RESTHeart 
+        url: '#2-install-restheart'
+      - title: 3. Start MongoDB
+        url: '#3-start-mongodb'
+      - title: 4. Start the RESTHeart server
+        url: '#4-start-the-restheart-server'
+      - title: 5. Enable MongoDB authentication 
+        url: '#5-enable-mongodb-authentication'
+      - title: 5.1 Connect RESTHeart to MongoDB over TLS/SSL
+        url: '#51-connect-restheart-to-mongodb-over-tlsssl'
+      - title: 5.2. MongoDB authentication with just enough permissions 
+        url: '#52-mongodb-authentication-with-just-enough-permissions'
+      - title: 6. Clients Authentication and Authorization
+        url: '#6-clients-authentication-and-authorization'
+  - title: Additional resources for beginners
+    url: '#additional-resources-for-beginners'
+    
+  
+# toc:
+# - title: Installation and Setup
+#   url: /learn/API_tutorial
+#   subfolderitems:
+#     - title: Thing 1
+#       url: /learn/API_tutorial
+#     - title: Thing 2
+#       url: /learn/API_tutorial
+#     - title: Thing 3
+#       url: /learn/API_tutorial
+# - title: API tutorial
+#   url: /learn/API_tutorial
+# - title: Resource URI
+#   url: /learn/Resource_URI
+# - title: Representation Format
+#   url: /learn/Representation_Format
+# - title: Reference sheet
+#   url: /learn/Reference_sheet
+# - title: Query Documents
+#   url: /learn/Query_Documents
+# - title: Write Requests
+#   url: /learn/Write_Requests
+# - title: Security
+#   url: /learn/Security
+# - title: Aggregations
+#   url: /learn/Aggregations)
+# - title: Binary Data (GridFS)
+#   url: /learn/Binary_Data_GridFS_
+# - title: ETag
+#   url: /learn/ETag
+# - title: Request Transformers
+#   url: /learn/Request_Transformers
+# - title: Request Checkers
+#   url: /learn/Request_Checkers
+# - title: Document validation with JSON schema
+#   url: /learn/Document_validation_with_JSON_schema
+# - title: Application Logic
+#   url: /learn/Application_Logic
+# - title: Request Hooks
+#   url: /learn/Request_Hooks
+# - title: Relationships
+#   url: /learn/Relationships
+# - title: Shard Keys
+#   url: /learn/Shard_Keys
+# - title: Manage Collection Indexes
+#   url: /learn/Manage_Collection_Indexes
+# - title: Speedup Requests with Cursor Pools
+#   url: /learn/Speedup_Requests_with_Cursor_Pools
+# - title: CORS Support
+#   url: /learn/CORS_Support
+# - title: Metrics on Requests
+#   url: /learn/Metrics_on_Requests
+# - title: Performances
+#   url: /learn/Performances
+# - title: An example Web application with AngularJs
+#   url: /learn/An_example_Web_application_with_AngularJs
+# - title: How to package custom code
+#   url: /learn/How_to_package_custom_code
+
+
