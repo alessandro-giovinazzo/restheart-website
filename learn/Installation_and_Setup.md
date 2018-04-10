@@ -3,7 +3,7 @@ layout: docs
 title: Installation and Setup
 ---
 
-* [Quick-start](#quick-start)
+<!-- * [Quick-start](#quick-start)
     * [Docker](#docker)
     * [Vagrant](#vagrant)
     * [Bare metal](#bare-metal)
@@ -16,7 +16,7 @@ title: Installation and Setup
     * [5.1 Connect RESTHeart to MongoDB over TLS/SSL](#51-connect-restheart-to-mongodb-over-tlsssl)
     * [5.2. MongoDB authentication with just enough permissions ](#52-mongodb-authentication-with-just-enough-permissions)
     * [6. Clients Authentication and Authorization](#6-clients-authentication-and-authorization)
-* [Additional resources for beginners](#additional-resources-for-beginners)
+* [Additional resources for beginners](#additional-resources-for-beginners) -->
 
 ## Quick-start
 

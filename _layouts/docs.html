@@ -1,52 +1,17 @@
-<!-- 
 --- 
-layout: landing 
+layout: default 
 --- 
--->
 
-<!DOCTYPE html>
-<html lang="en">
-    {% include head.html %}
-    <body class="stretched">
-        <!-- Document Wrapper
-        ============================================= -->
-        <div id="wrapper" class="clearfix">
-            {% include landing_header.html %}
-            <!-- Content
-		    ============================================= -->
-		    <section id="content">
-                <div class="docs-navigation">
-                    {% include navigation.html %}
-                </div>
-                <div class="docs-content">
-                    <div id="docs-start">
-                        {{ content }}
-                    </div>
-                </div>
-            </section>
-            {% include landing_footer.html %}
+{% include landing_header.html %}
+<!-- Content
+============================================= -->
+<section id="content">
+    <div class="docs-navigation">
+        {% include navigation.html %}
+    </div>
+    <div class="docs-content">
+        <div id="docs-start">
+            {{ content }}
         </div>
-        <!-- Go To Top
-        ============================================= -->
-        <div id="gotoTop" class="icon-angle-up"></div>
-        <!-- Footer Scripts
-        ============================================= -->
-        <script type="text/javascript" src="{{ "/include/js/functions.js" | prepend: site.baseurl }} "></script>
-
-    </body>
-   
-</html>
-
-
-<!-- <div class="container mt30">
-    <h1 style="text-align: center !important">
-        <a href="/learn" class="btn btn-success">
-            <span class="icon-left"></span>
-        </a> {{ page.title }}</h1>
-</div>
-
-<div class="container imgHover">
-    <article>
-        {{ content }}
-    </article>
-</div> -->
+    </div>
+</section>
