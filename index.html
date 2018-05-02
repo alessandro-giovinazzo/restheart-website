@@ -2,7 +2,7 @@
 layout: landing
 ---
 <!-- new hero section -->
-<section id="slider" class="slider-element slider-parallax dark slider-parallax-visible" style="/*! background: rgba(0, 0, 0, 0) linear-gradient(to left bottom, rgb(147, 44, 44), rgb(194, 79, 79)) repeat scroll 0% 0%; */ height: 500px;background-image: url(&quot;http://localhost:8888/restheart-hero-bridge.jpg&quot;);background-size: cover;">
+<section id="slider" class="slider-element slider-parallax dark slider-parallax-visible" style="height: 500px; background-image: url(&quot;landing-page/images/restheart-hero-bridge2.jpg&quot;);background-size: cover;">
     <div class="slider-parallax-inner" style="transform: translateY(-10px); height: 500px;">
         <div style="position: absolute; top: 50%; padding-top: 0px; padding-bottom: 0px; margin-top: -160.2px; opacity: 0.6818; width: 100%;" class="container vertical-middle clearfix">
             <div class="row">
@@ -22,22 +22,6 @@ layout: landing
 </section>
 <!-- new hero section -->
 
-<!-- original <section id="slider" class="slider-element slider-parallax dark" style="background: rgba(0, 0, 0, 0) linear-gradient(to left bottom, rgb(147, 44, 44), rgb(194, 79, 79)) repeat scroll 0% 0%; height: 500px;">
-    <div class="slider-parallax-inner">
-        <div class="container-fluid vertical-middle clearfix">
-            <div class="col nobottommargin center">
-                <div class="heading-block" style="margin-top:40px; margin-bottom: 30px;">
-                    <h2 style="font-size: 50px;">REST<span style="font-weight:200; color:#ffffff">HEART</span></h2>
-                    <span>The Web API for MongoDB</span>
-                </div>
-                <span class="center">Release 3.2 is out!</span>
-                <div class="center">
-                    <a href="#" data-scrollto="#section-features" class="button button-3d button-red button-xlarge nobottommargin"><i class="icon-github2"></i>Start Now</a>
-                </div>                 
-            </div>
-        </div>
-    </div>
-</section> -->
 
 
 
@@ -45,8 +29,10 @@ layout: landing
 <!-- Content
 ============================================= -->
 
-<section id="content">
-    <div class="content-wrap">
+<section id="content">  <!-- main section -->
+
+
+    <div class="content-wrap">      <!-- hero image -->
         <div class="container clearfix">
             <div class="col_one_fourth">
                 <div class="feature-box fbox-center fbox-light fbox-effect">
@@ -97,44 +83,12 @@ layout: landing
             </div>
 
         </div>
-    </div>
-
-<!-- code overview -->
-<!-- <div class="content-wrap" id="code-example-overview">
-    <div class="container clearfix">
-        <div class="row align-items-center">
-            <div class="col-md-5">
-                <h3>Lorem ipsum dolor sit ament conscutor adisciplit deonim.</h3>
-                <p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p> 
-                <a href="#" class="button button-border button-rounded button-fill fill-from-right button-light"><span> Learn </span></a>             
-            </div>
-            <div class="col-md-7">
-                <pre class="display-code">  
-                    <code>
-<span>1</span> $ curl http://dbapi.io/db/coll?filter= '\{"from":"ujibang"\}'\
-<span>2</span>  [{
-<span>3</span>      "_id": "docid",
-<span>4</span>      "from": "ujibang",
-<span>5</span>      "message": "RESTHeart rocks!",
-<span>6</span>      ...
-<span>7</span>          }, {
-<span>8</span>          "_id": { "$oid": "563a40d6e4b0ef984cae182b" },
-<span>9</span>          "from": "mkj6",
-<span>10</span>         "message": "MongoDB rocks as well!",
-<span>11</span>     ...
-<span>12</span> }]
-                    </code>
-                </pre>                               
-            </div>
-        </div>
-    </div>
-</div> -->
-    <!-- end - code overview -->
-
-<!--  tabs -->
+    </div>  <!-- end image -->
 
 
-<!-- Start -- code overview tabs 2 -->
+
+
+<!-- Start -- code overview tabs -->
 
 
 <div class="content-wrap" id="tab-section-code-overview">
@@ -277,57 +231,8 @@ layout: landing
         </div>
 </div>
 
-<!-- End -- code overview tabs 2 -->
+<!-- End -- code overview tabs -->
 
-
-
-
-<!-- <div class="content-wrap">
-        <div class="container clearfix">
-    <div class="tabs tabs-alt tabs-justify clearfix ui-tabs ui-corner-all ui-widget ui-widget-content" id="tab-10">
-            <ul class="tab-nav clearfix ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header" role="tablist">
-            <li role="tab" tabindex="0" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" aria-controls="tabs-37" aria-labelledby="ui-id-25" aria-selected="true" aria-expanded="true" style="width: 203px;"><a href="#tabs-37" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-25"><i class="icon-home2 norightmargin"></i></a></li>
-            <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-38" aria-labelledby="ui-id-26" aria-selected="false" aria-expanded="false" style="width: 203px;"><a href="#tabs-38" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-26">Nunc tincidunt</a></li>
-            <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-39" aria-labelledby="ui-id-27" aria-selected="false" aria-expanded="false" style="width: 203px;"><a href="#tabs-39" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-27">Proin dolor</a></li>
-            <li class="hidden-phone ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1" aria-controls="tabs-40" aria-labelledby="ui-id-28" aria-selected="false" aria-expanded="false" style="width: 203px;"><a href="#tabs-40" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-28">Aenean lacinia</a></li>
-            </ul>
-            <div class="tab-container">
-            <div class="tab-content clearfix ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-37" aria-labelledby="ui-id-25" role="tabpanel" aria-hidden="false" style="">
-            Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
-            </div>
-            <div class="tab-content clearfix ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-38" aria-labelledby="ui-id-26" role="tabpanel" style="display: none;" aria-hidden="true">
-            Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.
-            </div>
-            <div class="tab-content clearfix ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-39" aria-labelledby="ui-id-27" role="tabpanel" style="display: none;" aria-hidden="true">
-            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-            Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
-            </div>
-            <div class="tab-content clearfix ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-40" aria-labelledby="ui-id-28" role="tabpanel" style="display: none;" aria-hidden="true">
-            Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.
-            </div>
-            </div>
-            </div>
-
-        </div>
-    </div> -->
-
-
-
-
-    <!--  tabs -->
-
-    <!-- <div class="divider divider-short divider-center"><i class="icon-circle"></i></div> -->
-        <!-- <div class="content-wrap" style="padding: 0px 0px">
-            <div id="section-features" class="heading-block title-center page-section">
-                <h2>CASE STUDIES</h2>
-            </div> -->
-
-
-
-
-
-
-            <!-- <section id="slider" class="slider-element slider-parallax revslider-wrap ohidden clearfix"> -->
             <!--
             #################################
                 - THEMEPUNCH BANNER -
@@ -584,4 +489,6 @@ layout: landing
         </div>
     </div>
 
-</section><!-- #content end -->
+</section>  <!-- main section end -->
+
+<!-- #content end -->
